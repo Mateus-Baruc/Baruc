@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<label>Preencha o Formulario</label>
+<title>Formulario</title>
+</head>
+<body>
+	<form action="script/envio.php" methods="POST">
+		<table border="1">
+				<tr><td width="0px">
+		<label>Nome:*</td><td> </label><input type="text" name="nome" placeholder="Digite seu Nome" required="required"></label></td></tr>
+				<tr><td>
+		<label>E-mail:* </td><td> <input type="email" name="e-mail" placeholder="exemplo@gmail.com" required="required"></label></td></tr>
+				<tr><td>
+		<label>CEP:*</td><td> <input type="number" name="cep" placeholder="00000-000" required="required"></label></td></tr>
+				<tr><td>
+		<label>Data de Nascimento:*</td><td> <input type="date" name="nasc" required="required"></label></td></tr>
+				<tr><td>
+		<label>Senha:*</td><td> <input type="password" name="senha" placeholder="Digite sua Senha" required="required"></label></td></tr>
+				<tr><td>
+		<label>Confirme sua Senha:*</td><td> <input type="password" placeholder="Confirme sua Senha" required="required"></label></td></tr>
+
+			<tr>
+				<td><label>Documento:* </label> </td><td> CNPJ <input type="radio" name="CNPJ"> CPF <input type="radio" name="CPF"> RG <input type="radio" name="RG" required="required"></td>
+
+			</tr>
+
+				<tr><td>
+		<input type="submit" name="envia" value="Enviar"></td>
+				<td>	
+		<input type="reset" name="reset" value="Limpa dados"></tr></td>
+
+</table>
+	</form>
+
+</body>
+</html>
